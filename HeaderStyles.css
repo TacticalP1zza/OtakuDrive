@@ -44,17 +44,8 @@ header{
     font-style: normal;
     padding-top: 20px;
 }
-.instagram{
-    width: 8%;
-    height: auto;
-}
-.discord{
-    width: 10%;
-    height: auto;
-}
-.login img{
-    width: 30px;
-}
+
+
 
 /*header ends here*/
 .hero{
@@ -66,7 +57,6 @@ header{
 }
 .herov{
     width: 100%;
-    
 }
 
 #Events{
@@ -191,3 +181,49 @@ body {
 .item8 {
   animation-delay: calc(60s / 8 * (8 - 8) * -1);
 }
+.discord{
+    display: flex;
+    justify-content: space-evenly;
+}
+.custom-size {
+    font-size: 400px; /* Adjust the size as needed */
+  }
+  .fa-discord {
+    color: white;
+    transition: color 0.3s;
+  }
+
+  @keyframes customBeat {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+
+  @keyframes colorRotate {
+    0% {
+      color: #ff00ff; /* Neon Pink */
+    }
+    25% {
+      color: #00ffff; /* Neon Cyan */
+    }
+    50% {
+      color: #00ff00; /* Neon Green */
+    }
+    75% {
+      color: #ff00ff; /* Neon Pink */
+    }
+    100% {
+      color: #00ffff; /* Neon Cyan */
+    }
+  }
+
+  .fa-discord {
+    animation: customBeat 2s infinite;
+  }
+
+  .fa-discord:hover {
+    animation: customBeat 2s infinite, colorRotate 4s linear infinite;
+  }
