@@ -191,6 +191,7 @@ body {
   .fa-discord {
     color: white;
     transition: color 0.3s;
+    padding: 5%;
   }
 
   @keyframes customBeat {
