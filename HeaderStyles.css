@@ -245,6 +245,8 @@ body {
 .discord{
     display: flex;
     justify-content: space-evenly;
+    margin: 100px;
+    
 }
 .custom-size {
     font-size: 400px; /* Adjust the size as needed */
@@ -282,7 +284,7 @@ body {
     }
   }
 
-  .fa-discord {
+  .discord {
     animation: customBeat 2s infinite;
   }
 
