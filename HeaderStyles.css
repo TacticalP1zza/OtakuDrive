@@ -28,6 +28,7 @@ header{
     width: 100%;
     top: 0;
     white-space: nowrap;
+    z-index: 9999;
 }
 .navList{
     text-align: center;
@@ -66,27 +67,87 @@ header{
     flex-wrap: wrap;
 }
 
-#Events .poster{
-    width: 280px;
-    height: 400px;
-    text-align: center;
-    padding: 25px 15px;
-    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
-    border: 1px solid white;
-    border-radius: 4px;
-    margin: 15px;
-}
-#Events .poster:hover{
-    box-shadow: 20px 20px 34px rgba(70,62,221,0.13);
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 200px;
 }
-#Events .poster img{
-    width: 100%;
-    padding: 9px 9px 9px 9px;
-    line-height: 1;
-    border-radius: 4px;
-    color: aqua;
+#eventsTitle {
+  text-align: center;
+  margin-top: 20px;
+  font-size: xx-large;
+  margin-bottom: 2%;
+}
+.events-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  text-align: left;
+}
 
+
+.events-grid__container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 576px) {
+  .events-grid__container:not(.events-grid__container--wide) {
+      max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .events-grid__container:not(.events-grid__container--wide) {
+      max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .events-grid__container:not(.events-grid__container--wide) {
+      max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .events-grid__container:not(.events-grid__container--wide) {
+      max-width: 1140px;
+  }
+}
+.poster {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  
+  text-align: center;
+}
+.poster img {
+  width: 350px;
+  height: 420px;
+  position: relative;
+}
+.poster h4 {
+  font-size: 28px;
+  margin: 10px 0 5px;
+  text-align: left;
+  
+}
+.poster h5 {
+  font-size: 26px;
+  margin: 5px 0;
+  color: #888;
+  text-align: left;
+}
+.poster p {
+  font-size: 24px;
+  color: #888;
+  margin: 5px 0 15px;
+  text-align: left;
 }
 *,
 *::before,
@@ -227,4 +288,10 @@ body {
 
   .fa-discord:hover {
     animation: customBeat 2s infinite, colorRotate 4s linear infinite;
+  }
+
+  footer{
+    padding: 10%;
+    text-align: center;
+    font-size: 100px;
   }
