@@ -127,8 +127,8 @@ header{
   text-align: center;
 }
 .poster img {
-  width: 350px;
-  height: 420px;
+  width: 100%;
+  height: 400px;
   position: relative;
 }
 .poster h4 {
