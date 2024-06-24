@@ -193,7 +193,6 @@ body {
 
 .itemLeft,
 .itemRight {
-
   position: absolute;
   animation-timing-function: linear;
   animation-duration: 30s;
@@ -254,7 +253,7 @@ body {
   .fa-discord {
     color: white;
     transition: color 0.3s;
-    padding: 5%;
+  
   }
 
   @keyframes customBeat {
@@ -297,3 +296,160 @@ body {
     text-align: center;
     font-size: 100px;
   }
+ .CTA{
+  margin: 100px;
+ }
+ .join{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 87px;
+  z-index: 99;
+ }
+
+.join, img{
+  width: auto;
+  height: 600px;
+  z-index: 99;
+  background-color: transparent;
+}
+.join h1{
+  z-index: 99;
+  background-color: transparent;
+}
+
+
+
+.wrapperDiaongalOtaku {
+  width: 70%;
+  
+  margin-inline: auto;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+  font-size: xx-large;
+  transform: translate(0, 340px) skewY(-30deg);
+  z-index: 0;
+}
+
+.wrapperOtakuTop {
+  width: 70%;
+  
+  margin-inline: auto;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  font-size: xx-large;
+}
+.wrapperOtakuBottom {
+  width: 70%;
+  margin-inline: auto;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  font-size: xx-large;
+  transform: translate(0,643px);
+}
+
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+
+@keyframes scrollRight {
+  to {
+    right: -200px;
+  }
+}
+
+.itemOtaku,
+.itemOtaku1 {
+  position: absolute;
+  animation-timing-function: linear;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+.itemOtaku {
+  left: max(calc(25px * 8), 100%);
+  animation-name: scrollLeft;
+}
+.itemOtaku1 {
+  right: max(calc(200px * 8), calc(100% + 400px));
+  animation-name: scrollRight;
+}
+
+.ooitem1 {
+  transform: skewY(30deg);
+  animation-delay: calc(60s / 8 * (8 - 1) * -1);
+}
+
+.ooitem2 {
+  transform: skewY(30deg);
+  animation-delay: calc(60s / 8 * (8 - 2) * -1);
+}
+
+.ooitem3 {
+  transform: skewY(30deg);
+  animation-delay: calc(60s / 8 * (8 - 3) * -1);
+}
+
+.ooitem4 {
+  transform: skewY(30deg);
+  animation-delay: calc(60s / 8 * (8 - 4) * -1);
+}
+
+.ooitem5 {
+  transform: skewY(30deg);
+  animation-delay: calc(60s / 8 * (8 - 5) * -1);
+}
+
+.ooitem6 {
+  transform: skewY(30deg);
+  animation-delay: calc(60s / 8 * (8 - 6) * -1);
+}
+
+.ooitem7 {
+  transform: skewY(30deg);
+  animation-delay: calc(60s / 8 * (8 - 7) * -1);
+}
+
+.ooitem8 {
+  transform: skewY(30deg);
+  animation-delay: calc(60s / 8 * (8 - 8) * -1);
+}
+
+.oitem1 {
+  animation-delay: calc(60s / 8 * (8 - 1) * -1);
+}
+
+.oitem2 {
+  animation-delay: calc(60s / 8 * (8 - 2) * -1);
+}
+
+.oitem3 {
+  animation-delay: calc(60s / 8 * (8 - 3) * -1);
+}
+
+.oitem4 {
+  animation-delay: calc(60s / 8 * (8 - 4) * -1);
+}
+
+.oitem5 {
+  animation-delay: calc(60s / 8 * (8 - 5) * -1);
+}
+
+.oitem6 {
+  animation-delay: calc(60s / 8 * (8 - 6) * -1);
+}
+
+.oitem7 {
+  animation-delay: calc(60s / 8 * (8 - 7) * -1);
+}
+
+.oitem8 {
+  animation-delay: calc(60s / 8 * (8 - 8) * -1);
+}
