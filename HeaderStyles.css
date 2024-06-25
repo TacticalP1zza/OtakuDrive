@@ -159,9 +159,7 @@ header{
   margin: 0;
 }
 
-body {
-  background-color: #030712;
-}
+
 
 .wrapper {
   width: 90%;
@@ -297,7 +295,7 @@ body {
     font-size: 100px;
   }
  .CTA{
-  margin: 100px;
+  
  }
  .join{
   display: flex;
@@ -316,6 +314,7 @@ body {
 .join h1{
   z-index: 99;
   background-color: transparent;
+  font-size: 60px;
 }
 
 
@@ -452,4 +451,25 @@ body {
 
 .oitem8 {
   animation-delay: calc(60s / 8 * (8 - 8) * -1);
+}
+
+.button {
+  background-color: #EE083F;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: xx-large;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  z-index: 1;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #c90634;
+}
+
+.button:active {
+  background-color: #a0052b;
 }
