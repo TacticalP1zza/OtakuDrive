@@ -295,12 +295,10 @@ header{
     text-align: center;
     font-size: 100px;
   }
- .CTA{
-  
- }
+
  .join{
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   align-items: center;
   font-size: 87px;
   z-index: 99;
